@@ -1,0 +1,25 @@
+Q: What is time series?
+
+ans: Time series data is a collection of observations obtained through repeated measurements over time. It also referred to as time-stamped data, is a sequence of data points indexed in time order.
+
+Q: What Is Time Series Analysis?
+
+Ans: Time series analysis is a statistical technique that deals with time series data or trend analysis. Time series data means that data is in a series of particular time periods or intervals.
+
+Q: Time Series Analysis Uses cases?
+
+  i) Financial Analysis --> slaes forecasting, stock exchange, inventory Analysis and Prize distributuion/estimatation.
+  ii) Weather Analysis --> Temprecture estimatation, climate change, sessional sheft recognation and Weather forecasting.
+  iii) Network Data Analysis --> Network uses prediction, inclution dectation.
+  iv) Healthcare Analysis --> sesnes prediction, insurence benefit prediction and pession monitoring.
+
+  Data Preparation -> Data Analysis & Visualization {(i) Trend --> represent the incresing/decresing value in the series (ii) Seasonality --> represent the short term cycle in the series } -> Test stationarity(--> first we check a series stationary or not if the time series are stationary it muist have constant mean(it should not a function of time rather is should be constant), varience(it should not a function of time) and co-varience(co-varience of the ithotom and the i+m tom should not be function of time) so in this projcet testing the stationarity we will be using decifull test to perform hipothesis testing) -> Data transformantion {(i) Moving average --> In statistics a moving avg is a calculation use to analysis data point by creating series of averages of different object of the full dataset the reasion for calculating the moving avg is to help smoot data over specified periode of time by creating concently update avg (ii) Exponential smoothing --> is a rules of thume technique for smoothing time series data using Exponential window function were as the simple moving avg the past are waited equally Exponential function are used to assign Exponentially decreasing over a time} -> Review SARIMS with ACF(auto connection function) and PACF(pertial auto connection function) {(i) Autoregressive(q) -->here it look at the pass values that is if the Temprecture incresing over the pass 3 years it's most slidely the incresing of next year as well. (ii) Integrated (d). --> it create the difference between the past value and the current value that is if the Temprecture little over the pass three years that most likely the same time reason in next year and in case of moving avg of it uses linear combination of error in past values of predicted error of the model(iii) Moving averaged(q). --> is applied non sessional portion of time series by the second set pdq  is applied for sessional portion of time series }.
+
+Q: Why Does stationarity Matter?
+
+Ans:Stationarity is an important concept in time series analysis. 
+  i) Stationarity means that the statistical properties of a time series (or rather the process generating it) do not change over time.
+  ii) Stationarity is important because many useful analytical tools and statistical tests and models rely on it.
+
+Q: Environment & Tools For The Project?
+  Numpy[multi dimenssional array as like as data structure it can be use to perform fourier trensformation and mathematical operation of array], Pandas(python data analysis library it can be use import data and that can be create object to rows and column and can also be used to data into a file),Matplotlib(amazing Visualization library it can use to create interactive grap chat and map) Datetime( Date and time are not a datatype datetime module comes built in python that is no need to install it externally), Statsmodels
